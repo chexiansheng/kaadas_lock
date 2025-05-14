@@ -1,0 +1,100 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Basic Configuration",
+        "description": "Please enter the basic configuration information for your Kaadas lock",
+        "data": {
+          "token": "API Token",
+          "wifi_sn": "WiFi Serial Number",
+          "uid": "User ID"
+        }
+      },
+      "add_user": {
+        "title": "Add User Mapping",
+        "description": "Configure the mapping between Kaadas username and local nickname",
+        "data": {
+          "kaadas_username": "Kaadas Username",
+          "local_nickname": "Local Nickname"
+        }
+      },
+      "edit_user": {
+        "title": "Edit User Mapping",
+        "description": "Edit user mapping %{index} of %{count}",
+        "data": {
+          "kaadas_username": "Kaadas Username",
+          "local_nickname": "Local Nickname"
+        }
+      },
+      "select_edit_user": {
+        "title": "Select User to Edit",
+        "description": "Currently configured %{count} user mappings",
+        "data": {
+          "edit_index": "Select User"
+        }
+      },
+      "select_delete_user": {
+        "title": "Select User to Delete",
+        "description": "Currently configured %{count} user mappings",
+        "data": {
+          "delete_index": "Select User"
+        }
+      },
+      "confirm_delete": {
+        "title": "Confirm Delete User",
+        "description": "Are you sure you want to delete user '%{user_name}'? This operation cannot be undone.",
+        "data": {
+          "confirm": "I confirm to delete this user"
+        }
+      },
+      "add_user_complete": {
+        "title": "User Added",
+        "description": "Successfully added %{current_count} user mappings",
+        "menu_options": {
+          "add_another": "Add Another User",
+          "finish_config": "Finish Configuration"
+        }
+      },
+      "edit_base_config": {
+        "title": "Edit Basic Configuration",
+        "description": "Modify the basic configuration information of the Kaadas lock",
+        "data": {
+          "token": "API Token",
+          "wifi_sn": "WiFi Serial Number",
+          "uid": "User ID"
+        }
+      }
+    },
+    "error": {
+      "auth": "Authentication failed, please check your input",
+      "base": "Operation failed, please check your input"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Kaadas Lock Configuration Options",
+        "description": "Currently configured %{count}/%{max} user mappings for lock %{wifi_sn}",
+        "data": {
+          "action": "Select Operation"
+        }
+      }
+    }
+  },
+  "binary_sensor": {
+    "lock_status": "Lock Status",
+    "last_time": "Last Operation Time",
+    "last_text": "Last Operation",
+    "last_user": "Operator"
+  },
+  "sensor": {
+    "battery": "Battery Level",
+    "last_action": "Last Action",
+    "last_user": "Last User",
+    "battery_status": "Battery Status",
+    "operation_type": "Operation Type"
+  },
+  "device_automation": {
+    "trigger": {}
+  }
+}    

@@ -1,0 +1,100 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "基础配置",
+        "description": "请输入凯迪仕门锁的基础配置信息",
+        "data": {
+          "token": "API令牌",
+          "wifi_sn": "WiFi序列号",
+          "uid": "用户ID"
+        }
+      },
+      "add_user": {
+        "title": "添加用户映射",
+        "description": "配置凯迪仕用户名与本地用户名的映射关系",
+        "data": {
+          "kaadas_username": "凯迪仕用户名",
+          "local_nickname": "本地用户名"
+        }
+      },
+      "edit_user": {
+        "title": "编辑用户映射",
+        "description": "编辑第 %{index} 个用户映射（共 %{count} 个）",
+        "data": {
+          "kaadas_username": "凯迪仕用户名",
+          "local_nickname": "本地用户名"
+        }
+      },
+      "select_edit_user": {
+        "title": "选择要编辑的用户",
+        "description": "当前共有 %{count} 个用户映射",
+        "data": {
+          "edit_index": "选择用户"
+        }
+      },
+      "select_delete_user": {
+        "title": "选择要删除的用户",
+        "description": "当前共有 %{count} 个用户映射",
+        "data": {
+          "delete_index": "选择用户"
+        }
+      },
+      "confirm_delete": {
+        "title": "确认删除用户",
+        "description": "您确定要删除用户 '%{user_name}' 吗？此操作无法撤销。",
+        "data": {
+          "confirm": "我确认删除此用户"
+        }
+      },
+      "add_user_complete": {
+        "title": "用户添加完成",
+        "description": "已成功添加 %{current_count} 个用户映射",
+        "menu_options": {
+          "add_another": "添加另一个用户",
+          "finish_config": "完成配置"
+        }
+      },
+      "edit_base_config": {
+        "title": "修改门锁基本配置",
+        "description": "修改凯迪仕门锁的基础配置信息",
+        "data": {
+          "token": "API令牌",
+          "wifi_sn": "WiFi序列号",
+          "uid": "用户ID"
+        }
+      }
+    },
+    "error": {
+      "auth": "认证失败，请检查输入信息",
+      "base": "操作失败，请检查输入"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "凯迪仕门锁配置选项",
+        "description": "当前已为门锁 %{wifi_sn} 配置 %{count}/%{max} 个用户映射",
+        "data": {
+          "action": "选择操作"
+        }
+      }
+    }
+  },
+  "binary_sensor": {
+    "lock_status": "门锁状态",
+    "last_time": "最后操作时间",
+    "last_text": "最后操作",
+    "last_user": "操作用户"
+  },
+  "sensor": {
+    "battery": "电池电量",
+    "last_action": "最后操作",
+    "last_user": "最后操作用户",
+    "battery_status": "电池状态",
+    "operation_type": "操作类型"
+  },
+  "device_automation": {
+    "trigger": {}
+  }
+}    
